@@ -1,27 +1,36 @@
 <html>
 <head>
 <script src="http://garrison.3utilities.com/js/calculator.js"></script>
+<style>
+body {
+background-color: black;
+color: white;
+}
+a {
+color: red;
+}
+a:visited {
+color: orange;
+}
+input[type="url"] {
+background-color: gold;
+}
+input[type="submit"] {
+background-color: red;
+color: white;
+}
+button {
+background-color: gold;
+color: white;
+}
+.gold {
+color: gold;
+font-weight: bold;
+}
+</style>
 </head>
-<body onload="browser()">
-<form action="">
-<input list="sites" type="num" name="num" />
-<br>
-<input list="sites" type="num" name="num2" />
-<br>
-<input type="radio" id="+" name="type" value="+">
-<label for="+">+</label>
-<br>
-<input type="radio" id="-" name="type" value="-">
-<label for="-">+</label>
-<br>
-<input type="radio" id="×" name="type" value="×">
-<label for="×">+</label>
-<br>
-<input type="radio" id="÷" name="type" value="÷">
-<label for="÷">+</label>
-<br>
-<input type="submit" value="=" />
-</form>
+<body>
+<button onclick="browser()">=</button>
 <h1 id="solution"></h1>
 </body>
 </html>
