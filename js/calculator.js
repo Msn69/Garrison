@@ -1,11 +1,22 @@
 function browser() {
-const params = new URLSearchParams(location.search);
-const num1 = params.get('num')
-const num2 = params.get('num2')
-const type = params.get('type')
-let answer = parseFloat(num1) type parseFloat(num2);
-document.getElementById("solution").innerHTML = answer;
+var x = prompt("+,-,×,÷")
+var y = prompt("num:")
+var z = prompt(num 2:")
+if (x == "+") {
+var a = +
+var b = parseFloat(y) a parseFloat(z)
 }
-function full() {
-document.getElementById("window").requestFullscreen()
+else if (x == "-") {
+var a = -
+var b = parseFloat(y) a parseFloat(z)
+}
+else if (x == "×") {
+var a = *
+var b = parseFloat(y) a parseFloat(z)
+}
+else if (x == "÷") {
+var a = ÷
+var b = parseFloat(y) a parseFloat(z)
+}
+document.getElementById("solution").innerHTML = b;
 }
