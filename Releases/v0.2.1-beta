@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="http://garrison.3utilities.com/js/searchbar.js"></script>
+<title>garrison</title>
+</head>
+<body onload="browser()">
+<h1 class="gold">Garrison</h1>
+</hr>
+
+</hr>
+<form action="">
+<input list="sites" type="text" name="q" />
+<input type="submit" value="Q" />
+<datalist id="sites">
+<option>https://doodlecricket.github.io/</option>
+<option>https://pacman.live/</option>
+<option>https://snake.googlemaps.com/</option>
+</datalist>
+</form>
+<iframe onclick="requestFullscreen()" id="window" src="https://www.google.com" height="720" width="1080" allowfullscreen="True"></iframe>
+<br>
+<button onclick="full()">fullscreen</button>
