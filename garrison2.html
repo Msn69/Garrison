@@ -1,0 +1,55 @@
+<html><head>
+<script>
+function browser() {
+const params = new URLSearchParams(location.search);
+const browser1 = params.get('q')
+let result = browser1.replace("%3A", ":");
+let browser = result.replace("%2f", "/");
+document.getElementById("window").src = browser;
+}
+function full() {
+document.getElementById("window").requestFullscreen()
+}
+</script>
+<style>
+body {
+background-color: black;
+color: white;
+}
+a {
+color: red;
+}
+a:visited {
+color: orange;
+}
+input[type="url"] {
+background-color: gold;
+}
+input[type="submit"] {
+background-color: red;
+color: white;
+}
+button {
+background-color: gold;
+color: black;
+}
+.gold {
+color: gold;
+font-weight: bold;
+}
+</style>
+<title>garrison</title>
+</head><body onload="browser()">
+<h1 class="gold">Garrison 2.1</h1>
+<form action="">
+<input list="sites" type="text" name="q" />
+<input type="submit" value="Q" />
+<datalist id="sites">
+<option>https://doodlecricket.github.io/</option>
+<option>https://pacman.live/</option>
+<option>https://snake.googlemaps.com/</option>
+</datalist>
+</form>
+<iframe onclick="requestFullscreen()" id="window" src="https://www.google.com" height="720" width="1080" allowfullscreen="True"></iframe>
+<br>
+<button onclick="full()">fullscreen</button>
